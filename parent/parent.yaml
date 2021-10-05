@@ -4,10 +4,10 @@ metadata:
   name: parent-tags
   namespace: argocd
 spec:
-  project: sample
+  project: default
   source:
-    repoURL: https://github.com/jjohnson/jjohnson-argocd-tags
-    targetRevision: my-tag
+    repoURL: https://github.com/jjohnson-ah/jjohnson-argocd-tags
+    targetRevision: main
     path: k8s
     directory:
       recurse: true

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: parent-tags
+  name: parent-tags-bad
   namespace: argocd
 spec:
   project: default

@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: parent-tags-bad
-  namespace: argocd
+  name: parent-jjohnson-ah
+  namespace: argocd-test
 spec:
-  project: default
+  project: enbl6682
   source:
-    repoURL: https://github.com/jjohnson-ah/jjohnson-argocd-tags
+    repoURL: https://github.com/jjohnson-ah/jjohnson-argocd-tags.git
     targetRevision: main
     path: k8s
     directory:
       recurse: true
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: argocd-test
   syncPolicy:
     automated:
       prune: false

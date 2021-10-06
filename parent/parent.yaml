@@ -7,7 +7,7 @@ spec:
   project: enbl6682
   source:
     repoURL: https://github.com/jjohnson-ah/jjohnson-argocd-tags.git
-    targetRevision: ah-tst
+    targetRevision: main
     path: k8s
     directory:
       recurse: true
